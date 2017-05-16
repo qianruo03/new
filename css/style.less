@@ -1,0 +1,286 @@
+@import url('reset.css');
+//封装宽高背景
+.whb(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+}
+//封装宽高
+.wh(@w,@h){
+    width: @w;
+    height: @h;
+}
+//封装浮动
+.f(@f:left){
+    float: @f;
+}
+.pro(a){
+    position: absolute;
+}
+.pro(r){
+    position: relative;
+}
+//版心
+.wm{
+    margin: 0 auto;
+}//wm
+.full{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.box(@dir:row){
+    display: flex;
+    flex-direction: @dir;
+}
+html,body,.wrap{
+    .full;
+}
+html{
+    font-size: calc(100vw/3.6);
+}
+.header{
+    .wh(100%,.52rem);
+    background: url(../img/jindong_03.jpg)repeat-x;
+    .box;
+    align-items: center;
+    .first{
+        margin: .08rem;
+       
+        dt{
+            
+            img{
+                .wh(.2rem,auto);
+                display: block;
+                margin-left: .05rem;
+            }//img
+        }//dt
+        dd{
+            color: #fff;
+            font-size: .12rem;
+        }//dd
+    }//first
+    form{
+        flex: 1;
+        .box;
+        align-items: center;
+        height: .33rem;
+        background: #b09598;
+        border-radius: .05rem;
+        .img1{
+            .wh(.16rem,.16rem);
+            margin: .08rem;
+        }
+        .tex{
+            flex: 1;
+            border: 0;
+             background: #b09598;
+             color: #fff;
+             font-size: .14rem;
+             font-family: "宋体";
+             outline: 0;
+        }
+        .img2{
+            .wh(.15rem,.15rem);
+            margin: .08rem;
+        }
+    }
+}
+.footer{
+    .wh(100%,.52rem);
+
+    .box;
+    justify-content: center;
+    align-items: center;
+    dl{
+        margin-left: .5rem;
+        &:first-child{
+            margin-left: 0;
+        }//first-child
+        dt{
+            img{
+                .wh(.25rem,auto);
+                display: block;
+            }//img
+        }//dt
+        &:nth-child(3){
+            position: relative;
+            span{
+                position: absolute;
+                top: -.04rem;
+                right: -.07rem;
+                
+                .whb(.1rem,.1rem,#ff0000);
+                border-radius: 50%;
+            }
+        }
+    }//dl
+}
+.wrap{
+    .box(column);
+}
+.main{
+    flex: 1;
+   
+    .banner{
+        img{
+            .wh(100%,1.25rem);
+        }//img
+    }//banner
+    .list{
+        background: #f3f3f3;
+        height: 1.65rem;
+        padding-top: .15rem;
+        box-sizing: border-box;
+        .show{
+        .box;
+        justify-content: center;
+        dl{
+            .wh(.48rem,.58rem);
+            margin-left: .26rem;
+            margin-bottom:.12rem; 
+            &:first-child{
+                margin-left: 0;
+            }
+            dt{
+                text-align: center;
+                img{
+                    .wh(.34rem,auto);
+                }//img
+            }//dt
+            dd{
+                color: #828487;
+                font-size: .12rem;
+            }
+        }
+    }
+    }
+    
+    .hot{
+        .whb(100%,.47rem,#f3f3f3);
+        .box;
+        justify-content: center;
+        align-items: center;
+        h3{
+            .whb(3.41rem,.35rem,#fff);
+            
+            i{
+                font-size: .15rem;
+                color: #1c1c1c;
+                line-height: .34rem;
+                font-weight: bold;
+                margin-left: .08rem;
+            }
+            span{
+                display: inline-block;
+                .whb(.32rem,.18rem,#f02b2b);
+                text-align: center;
+                color: #fff;
+            }
+            a{
+                 font-size: .14rem;
+                 color: #151515;
+                 line-height: .34rem;
+                font{
+                    color: #f36969;
+                   margin: 0 .06rem;
+                }
+            }
+        }
+    }
+    
+    
+    .sec{
+        height: 1.6rem;
+        .title{
+            .box;
+            padding: 0 .07rem;
+            box-sizing: border-box;
+            margin-bottom: .11rem;
+            h3{
+                flex: 1;
+              font-size: .15rem;
+              color: #5e5e5e;
+              font-weight: bold;
+              span{
+                  display: inline-block;
+                  .wh(.21rem,.16rem);
+                  border: 1px solid #b6b6b6;
+                  text-align: center;
+                  color: #373737;
+                  font-size: .12rem;
+                  line-height: .16rem;
+                  margin: 0 5px;
+              }  
+            }//h3
+            p{
+                font-size: .12rem;
+                color: #f45b5b;
+                font-weight: bold;
+                img{
+                    .wh(.14rem,auto);
+                }
+            }
+        }//title
+       .content{
+           .box;
+            dl{
+            
+            margin-left: .2rem;
+            &:first-child{
+                
+               dt{
+                   position: relative;
+                    span{
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 4px;
+                    left: 0;
+                    .whb(.5rem,.14rem,#ff8400);
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-align: center;
+                    color: #fff;
+                }
+               }
+            }
+            dt{
+                height: .8rem;
+             
+                img{
+                    .wh(.74rem,auto);
+                    display: block;
+                }//img
+            }//dt
+            &:nth-child(4){
+                margin-right: 0;
+                dt{
+                  img{
+                      .wh(.38rem,auto);
+                  }  
+                }
+            }
+            dd{
+                p{
+                    font-size: .14rem;
+                    color: #f50c0c;
+                    font-weight: bold;
+                    font-family: "宋体";
+                }
+                u{
+                    text-decoration: line-through;
+                    font-size: .12rem;
+                    color: #a7a7a7;
+                }//u
+            }
+        }
+       }
+       
+    }
+    
+    .boot{
+        img{
+            .wh(100%,.33rem)
+        }
+    }
+}

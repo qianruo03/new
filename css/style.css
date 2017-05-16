@@ -1,0 +1,268 @@
+@import url('reset.css');
+.wm {
+  margin: 0 auto;
+}
+.full {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: calc(27.77777778vw);
+}
+.header {
+  width: 100%;
+  height: 0.52rem;
+  background: url(../img/jindong_03.jpg) repeat-x;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .first {
+  margin: .08rem;
+}
+.header .first dt img {
+  width: 0.2rem;
+  height: auto;
+  display: block;
+  margin-left: .05rem;
+}
+.header .first dd {
+  color: #fff;
+  font-size: .12rem;
+}
+.header form {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: .33rem;
+  background: #b09598;
+  border-radius: .05rem;
+}
+.header form .img1 {
+  width: 0.16rem;
+  height: 0.16rem;
+  margin: .08rem;
+}
+.header form .tex {
+  flex: 1;
+  border: 0;
+  background: #b09598;
+  color: #fff;
+  font-size: .14rem;
+  font-family: "宋体";
+  outline: 0;
+}
+.header form .img2 {
+  width: 0.15rem;
+  height: 0.15rem;
+  margin: .08rem;
+}
+.footer {
+  width: 100%;
+  height: 0.52rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer dl {
+  margin-left: .5rem;
+}
+.footer dl:first-child {
+  margin-left: 0;
+}
+.footer dl dt img {
+  width: 0.25rem;
+  height: auto;
+  display: block;
+}
+.footer dl:nth-child(3) {
+  position: relative;
+}
+.footer dl:nth-child(3) span {
+  position: absolute;
+  top: -0.04rem;
+  right: -0.07rem;
+  width: 0.1rem;
+  height: 0.1rem;
+  background: #ff0000;
+  border-radius: 50%;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+}
+.main .banner img {
+  width: 100%;
+  height: 1.25rem;
+}
+.main .list {
+  background: #f3f3f3;
+  height: 1.65rem;
+  padding-top: .15rem;
+  box-sizing: border-box;
+}
+.main .list .show {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .list .show dl {
+  width: 0.48rem;
+  height: 0.58rem;
+  margin-left: .26rem;
+  margin-bottom: .12rem;
+}
+.main .list .show dl:first-child {
+  margin-left: 0;
+}
+.main .list .show dl dt {
+  text-align: center;
+}
+.main .list .show dl dt img {
+  width: 0.34rem;
+  height: auto;
+}
+.main .list .show dl dd {
+  color: #828487;
+  font-size: .12rem;
+}
+.main .hot {
+  width: 100%;
+  height: 0.47rem;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main .hot h3 {
+  width: 3.41rem;
+  height: 0.35rem;
+  background: #ffffff;
+}
+.main .hot h3 i {
+  font-size: .15rem;
+  color: #1c1c1c;
+  line-height: .34rem;
+  font-weight: bold;
+  margin-left: .08rem;
+}
+.main .hot h3 span {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.18rem;
+  background: #f02b2b;
+  text-align: center;
+  color: #fff;
+}
+.main .hot h3 a {
+  font-size: .14rem;
+  color: #151515;
+  line-height: .34rem;
+}
+.main .hot h3 a font {
+  color: #f36969;
+  margin: 0 .06rem;
+}
+.main .sec {
+  height: 1.6rem;
+}
+.main .sec .title {
+  display: flex;
+  flex-direction: row;
+  padding: 0 .07rem;
+  box-sizing: border-box;
+  margin-bottom: .11rem;
+}
+.main .sec .title h3 {
+  flex: 1;
+  font-size: .15rem;
+  color: #5e5e5e;
+  font-weight: bold;
+}
+.main .sec .title h3 span {
+  display: inline-block;
+  width: 0.21rem;
+  height: 0.16rem;
+  border: 1px solid #b6b6b6;
+  text-align: center;
+  color: #373737;
+  font-size: .12rem;
+  line-height: .16rem;
+  margin: 0 5px;
+}
+.main .sec .title p {
+  font-size: .12rem;
+  color: #f45b5b;
+  font-weight: bold;
+}
+.main .sec .title p img {
+  width: 0.14rem;
+  height: auto;
+}
+.main .sec .content {
+  display: flex;
+  flex-direction: row;
+}
+.main .sec .content dl {
+  margin-left: .2rem;
+}
+.main .sec .content dl:first-child dt {
+  position: relative;
+}
+.main .sec .content dl:first-child dt span {
+  display: inline-block;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0.5rem;
+  height: 0.14rem;
+  background: #ff8400;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+.main .sec .content dl dt {
+  height: .8rem;
+}
+.main .sec .content dl dt img {
+  width: 0.74rem;
+  height: auto;
+  display: block;
+}
+.main .sec .content dl:nth-child(4) {
+  margin-right: 0;
+}
+.main .sec .content dl:nth-child(4) dt img {
+  width: 0.38rem;
+  height: auto;
+}
+.main .sec .content dl dd p {
+  font-size: .14rem;
+  color: #f50c0c;
+  font-weight: bold;
+  font-family: "宋体";
+}
+.main .sec .content dl dd u {
+  text-decoration: line-through;
+  font-size: .12rem;
+  color: #a7a7a7;
+}
+.main .boot img {
+  width: 100%;
+  height: 0.33rem;
+}
